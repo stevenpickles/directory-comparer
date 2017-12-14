@@ -83,7 +83,7 @@ namespace DirectoryComparer
         {
             if ( fileInfo.Exists )
             {
-                _stopwatch.Reset();
+                _stopwatch = new Stopwatch();
 
                 try
                 {
@@ -110,7 +110,6 @@ namespace DirectoryComparer
             }
             else
             {
-                _stopwatch.Reset();
                 _hashString = "<file does not exist>";
             }
         }
